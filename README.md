@@ -1,8 +1,8 @@
 # Zero To Snowflake
 
-Zero to Snowflake is an interactive demonstration of the Snowflake cloud data warehouse and related cloud data analytics tools. In this session we will demonstrate how quickly we can provision, setup, configure, and deployment a world class cloud data warehouse and analytics stack.
+Zero to Snowflake is an interactive demonstration of the Snowflake cloud data warehouse and related cloud data analytics tools. In this session we will demonstrate how quickly we can provision, setup, configure, and deploy a world class cloud data warehouse and analytics stack.
 
-# Analytics Infrastructure
+## Analytical Infrastructure
 
 In this Zero to Snowflake event, we will build a cloud data analytics infrastructure with best of breed tools. The basic architecture is:
 
@@ -19,7 +19,14 @@ In this event, data from Salesforce will be replicated with Fivetran into Snowfl
 
     Salesforce data -> Fivetran replication -> Snowflake warehouse -> Tableau dashboards
 
-# Provisioning & Setup
+## Analytical Configuration
+
+There are two analytical processes that we will perform to add value to Salesforce data:
+
+1. **Data Modeling** to reshape our normalized Salesforce data into a useful format for analytics.
+2. **Dashboard Design** to effectively design appealing dashboards to see and understand data, in a way that drives action.
+
+# PART 1: Provision Analytical Infrastructure
 
 ## Snowflake
 
@@ -51,8 +58,11 @@ To connect pull data from Salesforce there are two options:
 
 ## Tableau
 
-1. A Tableau free trial can be created at https://www.tableau.com/partner-trial?id=19610.
-2. TODO
+1. A Tableau free trial can be created at https://www.tableau.com/partner-trial?id=19610. Fill out the registration form, then download & install Tableau.
+
+# PART 2: Install Data Models into Snowflake
+
+# PART 3: Connect Tableau Dashboards to Snowflake
 
 # Infrastructure Summary & Links
 
