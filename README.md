@@ -66,6 +66,8 @@ Tableau often requires a simplified dataset that is in a single table or star sc
 
 # PART 3: Connect Tableau Dashboards to Snowflake
 
+Requires `Tableau 2018.3`.
+
 # Infrastructure Summary & Links
 
 - Snowflake Trial: https://trial.snowflake.com $400 free credits, credit card required
