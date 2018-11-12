@@ -50,7 +50,7 @@ To connect pull data from Salesforce there are two options:
 5. Look for an email from Fivetran and complete the sign up.
 6. In the Fivetran Dashboard, click **Connectors**.
 7. Click **+ CONNECTOR** and search for *Salesforce*.
-8. Keep the default **Destination schema** of `salesforce` or enter your own value.
+8. Click Salesforce and change the schema name to  `salesforce_z2s`. **It is very important** for the Tableau Dashboard section later to have it be named exactly `salesforce_z2s`.
 9. Click **AUTHORIZE** and complete the login of Fivetran into Salesforce.
 10. Click **SAVE & TEST**. When the tests are completed, click **< View Connector**.
 11. Fivetran will download a list of objects available for sync from Salesforce. In the upper right, click the slider to enable the sync of data from Salesforce into Snowflake.
@@ -62,7 +62,8 @@ To connect pull data from Salesforce there are two options:
 
 # PART 2: Install Data Models into Snowflake
 
-Tableau often requires a simplified dataset that is in a single table or star schema. 
+Tableau often requires a simplified dataset that is in a single table or star schema. In our Zero to Snowflake example, this will take the form of a dimensional model that we can install.
+
 
 # PART 3: Connect Tableau Dashboards to Snowflake
 
