@@ -49,18 +49,20 @@ To connect pull data from Salesforce there are two options:
 4. Click **Activate** in the final step.
 5. Look for an email from Fivetran and complete the sign up.
 6. In the Fivetran Dashboard, click **Connectors**.
-7. Click the **+ CONNECTOR** and search for *Salesforce*.
+7. Click **+ CONNECTOR** and search for *Salesforce*.
 8. Keep the default **Destination schema** of `salesforce` or enter your own value.
 9. Click **AUTHORIZE** and complete the login of Fivetran into Salesforce.
 10. Click **SAVE & TEST**. When the tests are completed, click **< View Connector**.
 11. Fivetran will download a list of objects available for sync from Salesforce. In the upper right, click the slider to enable the sync of data from Salesforce into Snowflake.
-12. Scroll down the page to **Settings** and **Replication Frequency** and move the slider to `5m`. This will kick of an initial sync of historical data.
+12. Scroll down the page to **Settings** and **Replication Frequency** and move the slider to `5m`. This will kick off an initial sync of historical data.
 
 ## Tableau
 
 1. A Tableau free trial can be created at https://www.tableau.com/partner-trial?id=19610. Fill out the registration form, then download & install Tableau.
 
 # PART 2: Install Data Models into Snowflake
+
+Tableau often requires a simplified dataset that is in a single table or star schema. 
 
 # PART 3: Connect Tableau Dashboards to Snowflake
 
@@ -70,3 +72,7 @@ To connect pull data from Salesforce there are two options:
 - Salesforce Developer Account: https://developer.salesforce.com Free accont, no credit card
 - Fivetran Trial: *Sign up through Snowflake Partner Connect inside Snowflake*
 - Tableau Trial: https://www.tableau.com/partner-trial?id=19610 14 days, no credit card
+
+## Additional Salesforce Dummy Data
+
+The Populate Salesforce application can create additional realistic data beyond what the Salesforce Developer Edition installs for you. Install it from here: https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000EO5smUAD
