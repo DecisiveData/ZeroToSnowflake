@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW "FACT_LEAD" COPY GRANTS AS
+CREATE OR REPLACE VIEW "DIM_LEAD" COPY GRANTS AS
 SELECT
     --Dimension Keys
      LEA.ID                         AS "Lead Id"
