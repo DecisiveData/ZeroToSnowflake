@@ -64,8 +64,11 @@ To connect pull data from Salesforce there are two options:
 
 # PART 2: Install Data Models into Snowflake
 
-Tableau often requires a simplified dataset that is in a single table or star schema. In our Zero to Snowflake example, this will take the form of a dimensional model that we can install.
+Tableau often requires a simplified dataset that is in a single table or star schema. In our Zero to Snowflake example, this will take the form of a dimensional model that we can install. A sample dimensional model is available in this repository at `/salesforce/fivetran/dimensional` or https://github.com/DecisiveData/ZeroToSnowflake/tree/master/salesforce/fivetran/dimensional.
 
+1. In Snowflake, click **Worksheets** and open a blank worksheet.
+2. Copy/paste the contents of `/salesforce/fivetran/dimensional/__install_dimensional.sql` into the blank worksheet in Snowflake.
+3. At the top of the worksheet, check the box for **All Queries** and then click the **Run** button.
 
 # PART 3: Connect Tableau Dashboards to Snowflake
 
