@@ -26,29 +26,20 @@ In this event, data from Salesforce will be replicated with Fivetran into Snowfl
 - Fivetran Trial: *Sign up through Snowflake Partner Connect inside Snowflake*
 - Tableau Trial: https://www.tableau.com/partner-trial?id=19610 14 days, no credit card
 
-## Configuration
-
-There are two analytical processes that we will perform to add value to Salesforce data:
-
-1. **Data Modeling** to reshape our normalized Salesforce data into a useful format for analytics.
-2. **Dashboard Design** to effectively design appealing dashboards to see and understand data, in a way that drives action.
-
-# PART 1: Provision Analytical Infrastructure
-
-## Snowflake
+# Data Warehouse Setup - Snowflake
 
 1. Sign up for a Snowflake Trial with $400 credit at https://trial.snowflake.com.
 2. An email will come within 15 minutes when your Snowflake account is ready.
 3. Once you receive the email, login to your Snowflake account.
 
-## Salesforce
+# Data Source Setup - Salesforce
 
 To connect pull data from Salesforce there are two options:
 
 1. **EXISTING ACCOUNT**: Use your active Salesforce account. The Salesforce account plan level must be Enterprise or higher OR have purchased API calls.
 2. **DEVELOPER ACCOUNT**: Sign up for a new **free** Salesforce developer account. Developer accounts come with mock data but have free API calls. Sign up at https://developer.salesforce.com/.
 
-## Fivetran
+# Data Pipeline Setup - Fivetran
 
 1. In Snowflake, click the user menu (top right corner) → Switch Role → Select ACCOUNTADMIN.
 2. Click the **Partner Connect** tab.
@@ -65,12 +56,17 @@ To connect pull data from Salesforce there are two options:
 13. In the upper right, click the slider to **Enable** the sync of data from Salesforce into Snowflake.
 14. Above the list of tables, change **Replication Frequency** slider to `5m` and then over to `24h`. This will kick off an initial sync of historical data.
 
-## Tableau
+# Data Visualization Setup - Tableau
 
 1. A Tableau free trial can be created at https://www.tableau.com/partner-trial?id=19610.
 2. Fill out the registration form, then download & install Tableau.
 
-# PART 2: Install Data Models into Snowflake
+# Data Warehouse Configuration: Dimensional Model in Snowflake
+
+There are two analytical processes that we will perform to add value to Salesforce data:
+
+1. **Data Modeling** to reshape our normalized Salesforce data into a useful format for analytics.
+2. **Dashboard Design** to effectively design appealing dashboards to see and understand data, in a way that drives action.
 
 Tableau often requires a simplified dataset that is in a single table or star schema. In our Zero to Snowflake example, this will take the form of a dimensional model that we can install. A sample dimensional model is available in this repository at `/salesforce/fivetran/dimensional` or https://github.com/DecisiveData/ZeroToSnowflake/tree/master/salesforce/fivetran/dimensional.
 
@@ -78,7 +74,7 @@ Tableau often requires a simplified dataset that is in a single table or star sc
 2. Copy/paste the contents of `/salesforce/fivetran/dimensional/__install_dimensional.sql` into the blank worksheet in Snowflake.
 3. At the top of the worksheet, check the box for **All Queries** and then click the **Run** button.
 
-# PART 3: Connect Tableau Dashboards to Snowflake
+# Data Visualization Configuration: Executive Sales Summary Dashboard in Tableau
 
 **NOTE**: Requires `Tableau 2018.3`.
 
