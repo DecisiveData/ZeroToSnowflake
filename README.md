@@ -99,8 +99,8 @@ The Populate Salesforce application can create additional realistic data beyond 
 
 ## Snowflake Login
 
-URL: https://ddlearn.snowflakecomputing.com
-User: `Z2S_USER`
-Warehouse: `PC_FIVETRAN2_WH`
-Database: `PC_FIVETRAN_DB`
-Schema: `SALESFORCE_Z2S`
+- URL: https://ddlearn.snowflakecomputing.com
+- User: `Z2S_USER`
+- Warehouse: `PC_FIVETRAN2_WH`
+- Database: `PC_FIVETRAN_DB`
+- Schema: `SALESFORCE_Z2S`
