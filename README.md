@@ -53,8 +53,10 @@ To connect pull data from Salesforce there are two options:
 8. Click Salesforce and change the schema name to  `salesforce_z2s`. **It is very important** for the Tableau Dashboard section later to have it be named exactly `salesforce_z2s`.
 9. Click **AUTHORIZE** and complete the login of Fivetran into Salesforce.
 10. Click **SAVE & TEST**. When the tests are completed, click **< View Connector**.
-11. Fivetran will download a list of objects available for sync from Salesforce. In the upper right, click the slider to enable the sync of data from Salesforce into Snowflake.
-12. Scroll down the page to **Settings** and **Replication Frequency** and move the slider to `5m`. This will kick off an initial sync of historical data.
+11. Fivetran will download a list of objects available for sync from Salesforce.
+12. Under the **Schemas** header click the `-` button just to the left of the **Sync Table** header. We only need a few tables, and this will remove every table from the sync. Then go through the list of objects and add back just the necessary tables, which are `Account`, `Lead`, `Opportunity`, `OpportunityLineItem`, `Pricebook2`, `PricebookEntry`, `Product2`, and `User`.
+13. In the upper right, click the slider to **Enable** the sync of data from Salesforce into Snowflake.
+14. Above the list of tables, change **Replication Frequency** slider to `5m` and then over to `24h`. This will kick off an initial sync of historical data.
 
 ## Tableau
 
@@ -67,7 +69,12 @@ Tableau often requires a simplified dataset that is in a single table or star sc
 
 # PART 3: Connect Tableau Dashboards to Snowflake
 
-Requires `Tableau 2018.3`.
+**NOTE**: Requires `Tableau 2018.3`.
+
+1. Download the starter Tableau file in this repository at `/salesforce/tableau/Executive Sales Summary.twbx` or online here: https://github.com/DecisiveData/ZeroToSnowflake/blob/master/salesforce/tableau/Executive%20Sales%20Summary.twbx
+2. Click the **Download** button in Github to move a copy of `Executive Sales Summary.twbx` to your hard drive.
+3. When the file opens in Tableau, a login dialog will come up. Click the **Edit connection** button, and fill in your server, username, and password.
+4. Click **Sign In** and data should populate.
 
 # Infrastructure Summary & Links
 
