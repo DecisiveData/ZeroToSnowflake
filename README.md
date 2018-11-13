@@ -89,3 +89,18 @@ Tableau often requires a simplified dataset that is in a single table or star sc
 ## Additional Salesforce Dummy Data
 
 The Populate Salesforce application can create additional realistic data beyond what the Salesforce Developer Edition installs for you. Install it from here: https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000EO5smUAD
+
+# Login Information
+
+## Salesforce Developer Logins
+
+- snowflake@decisivedata.net
+- snowflake1@decisivedata.net
+
+## Snowflake Login
+
+URL: https://ddlearn.snowflakecomputing.com
+User: `Z2S_USER`
+Warehouse: `PC_FIVETRAN2_WH`
+Database: `PC_FIVETRAN_DB`
+Schema: `SALESFORCE_Z2S`
