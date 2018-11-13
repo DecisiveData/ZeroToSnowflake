@@ -1,8 +1,8 @@
 # Zero To Snowflake
 
-Zero to Snowflake is an interactive demonstration of the Snowflake cloud data warehouse and related cloud data analytics tools. In this session we will demonstrate how quickly we can provision, setup, configure, and deploy a world class cloud data warehouse and analytics stack.
+Zero to Snowflake is an interactive demonstration of the Snowflake cloud data warehouse and related cloud data analytics tools. In this session we will demonstrate how quickly we can provision, configure, and deploy a world class cloud data warehouse and analytics stack.
 
-## Analytical Infrastructure
+## Infrastructure
 
 In this Zero to Snowflake event, we will build a cloud data analytics infrastructure with best of breed tools. The basic architecture is:
 
@@ -19,7 +19,14 @@ In this event, data from Salesforce will be replicated with Fivetran into Snowfl
 
     Salesforce data -> Fivetran replication -> Snowflake warehouse -> Tableau dashboards
 
-## Analytical Configuration
+## Provisioning
+
+- Snowflake Trial: https://trial.snowflake.com $400 free credits, credit card required
+- Salesforce Developer Account: https://developer.salesforce.com Free account, no credit card
+- Fivetran Trial: *Sign up through Snowflake Partner Connect inside Snowflake*
+- Tableau Trial: https://www.tableau.com/partner-trial?id=19610 14 days, no credit card
+
+## Configuration
 
 There are two analytical processes that we will perform to add value to Salesforce data:
 
@@ -60,7 +67,8 @@ To connect pull data from Salesforce there are two options:
 
 ## Tableau
 
-1. A Tableau free trial can be created at https://www.tableau.com/partner-trial?id=19610. Fill out the registration form, then download & install Tableau.
+1. A Tableau free trial can be created at https://www.tableau.com/partner-trial?id=19610.
+2. Fill out the registration form, then download & install Tableau.
 
 # PART 2: Install Data Models into Snowflake
 
@@ -78,13 +86,6 @@ Tableau often requires a simplified dataset that is in a single table or star sc
 2. Click the **Download** button in Github to move a copy of `Executive Sales Summary.twbx` to your hard drive.
 3. When the file opens in Tableau, a login dialog will come up. Click the **Edit connection** button, and fill in your server, username, and password.
 4. Click **Sign In** and data should populate.
-
-# Infrastructure Summary & Links
-
-- Snowflake Trial: https://trial.snowflake.com $400 free credits, credit card required
-- Salesforce Developer Account: https://developer.salesforce.com Free account, no credit card
-- Fivetran Trial: *Sign up through Snowflake Partner Connect inside Snowflake*
-- Tableau Trial: https://www.tableau.com/partner-trial?id=19610 14 days, no credit card
 
 # Sample Login Information
 
