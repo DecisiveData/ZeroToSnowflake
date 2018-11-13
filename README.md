@@ -94,8 +94,9 @@ The Populate Salesforce application can create additional realistic data beyond 
 
 ## Salesforce Developer Logins
 
-- snowflake@decisivedata.net
-- snowflake1@decisivedata.net
+- URL: https://login.salesforce.com
+- User: `snowflake@decisivedata.net`
+- User: `snowflake1@decisivedata.net`
 
 ## Snowflake Login
 
