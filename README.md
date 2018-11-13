@@ -105,3 +105,8 @@ The Populate Salesforce application can create additional realistic data beyond 
 - Warehouse: `PC_FIVETRAN2_WH`
 - Database: `PC_FIVETRAN_DB`
 - Schema: `SALESFORCE_Z2S`
+
+## Fivetran Login
+
+- URL: https://fivetran.com/dashboard
+- User: `zerotosnowflake@decisivedata.net`
