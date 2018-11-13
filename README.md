@@ -82,15 +82,13 @@ Tableau often requires a simplified dataset that is in a single table or star sc
 # Infrastructure Summary & Links
 
 - Snowflake Trial: https://trial.snowflake.com $400 free credits, credit card required
-- Salesforce Developer Account: https://developer.salesforce.com Free accont, no credit card
+- Salesforce Developer Account: https://developer.salesforce.com Free account, no credit card
 - Fivetran Trial: *Sign up through Snowflake Partner Connect inside Snowflake*
 - Tableau Trial: https://www.tableau.com/partner-trial?id=19610 14 days, no credit card
 
-## Additional Salesforce Dummy Data
+# Sample Login Information
 
-The Populate Salesforce application can create additional realistic data beyond what the Salesforce Developer Edition installs for you. Install it from here: https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000EO5smUAD
-
-# Login Information
+The password is the same for the below example accounts. Ask a leader for it.
 
 ## Salesforce Developer Logins
 
@@ -110,3 +108,9 @@ The Populate Salesforce application can create additional realistic data beyond 
 
 - URL: https://fivetran.com/dashboard
 - User: `zerotosnowflake@decisivedata.net`
+
+# Other Information
+
+## Additional Salesforce Dummy Data
+
+The *Populate Salesforce* application can create additional realistic data beyond what the Salesforce Developer Edition installs for you. Install it from here: https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000EO5smUAD
