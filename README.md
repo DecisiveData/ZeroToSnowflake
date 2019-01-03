@@ -21,7 +21,7 @@ In this event, data from Salesforce will be replicated with Fivetran into Snowfl
 
 ## Provisioning
 
-- Snowflake Trial: https://trial.snowflake.com $400 free credits, credit card required
+- Snowflake Trial: [https://trial.snowflake.com](https://trial.snowflake.com/?utm_source=decisive-data&utm_medium=referral&utm_campaign=self-service-partner-referral-decisive-data) $400 free credits
 - Salesforce Developer Account: https://developer.salesforce.com Free account, no credit card
 - Fivetran Trial: *Sign up through Snowflake Partner Connect inside Snowflake*
 - Tableau Trial: https://www.tableau.com/partner-trial?id=19610 14 days, no credit card
