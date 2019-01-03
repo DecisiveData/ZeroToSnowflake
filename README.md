@@ -12,8 +12,8 @@ The cloud analytics tools we will use for this process are:
 
 - Data Source: [**Salesforce**](https://www.salesforce.com)
 - Data Pipeline: [**Fivetran**](https://www.fivetran.com)
-- Data Warehouse: [**Snowflake**](https://www.snowflake.com)
-- Data Visualization: [**Tableau**](https://www.tableau.com)
+- Data Warehouse: [**Snowflake**](https://trial.snowflake.com/?utm_source=decisive-data&utm_medium=referral&utm_campaign=self-service-partner-referral-decisive-data)
+- Data Visualization: [**Tableau**](https://www.tableau.com/partner-trial?id=19610)
 
 In this event, data from Salesforce will be replicated with Fivetran into Snowflake, where an analytical data model will be applied. Data will the be visualized in Tableau dashboards.
 
@@ -24,11 +24,11 @@ In this event, data from Salesforce will be replicated with Fivetran into Snowfl
 - Snowflake Trial: [https://trial.snowflake.com](https://trial.snowflake.com/?utm_source=decisive-data&utm_medium=referral&utm_campaign=self-service-partner-referral-decisive-data) $400 free credits
 - Salesforce Developer Account: https://developer.salesforce.com Free account, no credit card
 - Fivetran Trial: *Sign up through Snowflake Partner Connect inside Snowflake*
-- Tableau Trial: https://www.tableau.com/partner-trial?id=19610 14 days, no credit card
+- Tableau Trial: [https://www.tableau.com/partner-trial](https://www.tableau.com/partner-trial?id=19610) 14 days, no credit card
 
 # Data Warehouse Setup - Snowflake
 
-1. Sign up for a Snowflake Trial with $400 credit at https://trial.snowflake.com.
+1. Sign up for a Snowflake Trial with $400 credit at [https://trial.snowflake.com](https://trial.snowflake.com/?utm_source=decisive-data&utm_medium=referral&utm_campaign=self-service-partner-referral-decisive-data).
 2. An email will come within 15 minutes when your Snowflake account is ready.
 3. Once you receive the email, login to your Snowflake account.
 
@@ -58,7 +58,7 @@ To connect pull data from Salesforce there are two options:
 
 # Data Visualization Setup - Tableau
 
-1. A Tableau free trial can be created at https://www.tableau.com/partner-trial?id=19610.
+1. A Tableau free trial can be created at [https://www.tableau.com/partner-trial](https://www.tableau.com/partner-trial?id=19610).
 2. Fill out the registration form, then download & install Tableau.
 
 # Data Warehouse Configuration: Dimensional Model in Snowflake
