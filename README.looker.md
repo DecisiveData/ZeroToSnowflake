@@ -13,18 +13,18 @@ The cloud analytics tools we will use for this process are:
 - Data Source: [**Salesforce**](https://www.salesforce.com)
 - Data Pipeline: [**Fivetran**](https://www.fivetran.com)
 - Data Warehouse: [**Snowflake**](https://trial.snowflake.com/?utm_source=decisive-data&utm_medium=referral&utm_campaign=self-service-partner-referral-decisive-data)
-- Data Visualization: [**Tableau**](https://www.tableau.com/partner-trial?id=19610)
+- Data Visualization: [**Looker**](https://www.looker.com)
 
-In this event, data from Salesforce will be replicated with Fivetran into Snowflake, where an analytical data model will be applied. Data will then be visualized in Tableau dashboards.
+In this event, data from Salesforce will be replicated with Fivetran into Snowflake, where an analytical data model will be applied. Data will then be further modeled and visualized in Looker dashboards.
 
-    Salesforce data -> Fivetran replication -> Snowflake warehouse -> Tableau dashboards
+    Salesforce data -> Fivetran replication -> Snowflake warehouse -> Looker dashboards
 
 ## Provisioning
 
 - Snowflake Trial: [https://trial.snowflake.com](https://trial.snowflake.com/?utm_source=decisive-data&utm_medium=referral&utm_campaign=self-service-partner-referral-decisive-data) $400 free credits
 - Salesforce Developer Account: https://developer.salesforce.com Free account, no credit card
 - Fivetran Trial: *Sign up through Snowflake Partner Connect inside Snowflake*
-- Tableau Trial: [https://www.tableau.com/partner-trial](https://www.tableau.com/partner-trial?id=19610) 14 days, no credit card
+- Looker: https://decisivedata.looker.com *We will use Decisive Data's Looker, but free 21-day proof of concepts are available at looker.com*
 
 # Data Warehouse Setup - Snowflake
 
@@ -48,40 +48,31 @@ To connect pull data from Salesforce there are two options:
 5. Look for an email from Fivetran and complete the sign up.
 6. In the Fivetran Dashboard, click **Connectors**.
 7. Click **+ CONNECTOR** and search for *Salesforce*.
-8. Click Salesforce and change the schema name to  `salesforce_z2s`. **It is very important** for the Tableau Dashboard section later to have it be named exactly `salesforce_z2s`.
+8. Click Salesforce and change the schema name to  `salesforce_z2s`.
 9. Click **AUTHORIZE** and complete the login of Fivetran into Salesforce.
 10. Click **SAVE & TEST**. When the tests are completed, click **< View Connector**.
 11. Fivetran will download a list of objects available for sync from Salesforce.
-12. Under the **Schemas** header click the `-` button just to the left of the **Sync Table** header. We only need a few tables, and this will remove every table from the sync. Then go through the list of objects and add back just the necessary tables, which are `Account`, `Lead`, `Opportunity`, `OpportunityLineItem`, `Pricebook2`, `PricebookEntry`, `Product2`, and `User`.
+12. Under the **Schemas** header click the `-` button just to the left of the **Sync Table** header. We only need a few tables, and this will remove every table from the sync. Then go through the list of objects and add back just the necessary tables, which are `Account`, `Campaign`, `Contact`, `Lead`, `Opportunity`, and `User`. There is no harm in syncing all tables, it will just take slightly longer on the initial historical sync.
 13. In the upper right, click the slider to **Enable** the sync of data from Salesforce into Snowflake.
 14. Above the list of tables, change **Replication Frequency** slider to `5m` and then over to `24h`. This will kick off an initial sync of historical data.
 
-# Data Visualization Setup - Tableau
+# Data Visualization Setup - Looker
 
-1. A Tableau free trial can be created at [https://www.tableau.com/partner-trial](https://www.tableau.com/partner-trial?id=19610).
-2. Fill out the registration form, then download & install Tableau.
+1. A Looker user account invitation in the Decisive Data tenant will be emailed to you. Follow the instructions to create a password and sign up.
 
-# Data Warehouse Configuration: Dimensional Model in Snowflake
+# Data Warehouse Configuration - Snowflake
 
-There are two analytical processes that we will perform to add value to Salesforce data:
+There are some tasks that we will perform in Snowflake to enable an analytical tool to connect to our cloud data warehouse.
 
-1. **Data Modeling** to reshape our normalized Salesforce data into a useful format for analytics.
-2. **Dashboard Design** to effectively design appealing dashboards to see and understand data, in a way that drives action.
+1. Copy/paste the contents of `/salesforce/fivetran/analytics_setup.sql` into the blank worksheet in Snowflake.
+2. At the top of the worksheet, check the box for **All Queries** and then click the **Run** button.
 
-Tableau often requires a simplified dataset that is in a single table or star schema. In our Zero to Snowflake example, this will take the form of a dimensional model that we can install. A sample dimensional model is available in this repository at `/salesforce/fivetran/dimensional` or https://github.com/DecisiveData/ZeroToSnowflake/tree/master/salesforce/fivetran/dimensional.
+# Data Visualization Configuration - Looker
 
-1. In Snowflake, click **Worksheets** and open a blank worksheet.
-2. Copy/paste the contents of `/salesforce/fivetran/dimensional/__install_dimensional.sql` into the blank worksheet in Snowflake.
-3. At the top of the worksheet, check the box for **All Queries** and then click the **Run** button.
-
-# Data Visualization Configuration: Executive Sales Summary Dashboard in Tableau
-
-**NOTE**: Requires `Tableau 2018.3`.
-
-1. Download the starter Tableau file in this repository at `/salesforce/tableau/Executive Sales Summary.twbx` or online here: https://github.com/DecisiveData/ZeroToSnowflake/blob/master/salesforce/tableau/Executive%20Sales%20Summary.twbx
-2. Click the **Download** button in Github to move a copy of `Executive Sales Summary.twbx` to your hard drive.
-3. When the file opens in Tableau, a login dialog will come up. Click the **Edit connection** button, and fill in your server, username, and password.
-4. Click **Sign In** and data should populate.
+1. View our Looker model here: https://github.com/DecisiveData/blocks_salesforce
+2. In the Looker Admin section, first configure a Connection with the settings created in the `analytics_setup.sql` file of the last step. Be sure to test the connection.
+3. In the Looker Develop menu, select **Manage LookML Projects** and click the **New LookML Project** button in the upper right.
+4. Name the project and in Starting Point select **Clone Public Git Repository**. In the **Git Repository URL** textbox enter `git://github.com/DecisiveData/blocks_salesforce.git` and click **Create Project**.
 
 # Sample Login Information
 
