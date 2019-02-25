@@ -61,6 +61,14 @@ To connect pull data from Salesforce there are two options:
 1. A Tableau free trial can be created at [https://www.tableau.com/partner-trial](https://www.tableau.com/partner-trial?id=19610).
 2. Fill out the registration form, then download & install Tableau.
 
+# Data Visualization Setup - Snowflake ODBC Driver
+
+Tableau Desktop (and Tableau Server) connects to Snowflake using an ODBC driver that must be installed as a pre-requisite.
+
+1. In Snowflake, click the **Help** icon in the upper right and click the **Download...** option.
+2. On the left menu, select **ODBC Driver** and download the appropriate ODBC driver for your operating system and on Windows the appropriate bitness (x86 or x64).
+3. Once the ODBC driver is downloaded, complete the install process on your local computer.
+
 # Data Warehouse Configuration: Dimensional Model in Snowflake
 
 There are two analytical processes that we will perform to add value to Salesforce data:
