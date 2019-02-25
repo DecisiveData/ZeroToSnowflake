@@ -91,6 +91,10 @@ Tableau often requires a simplified dataset that is in a single table or star sc
 3. When the file opens in Tableau, a login dialog will come up. Click the **Edit connection** button, and fill in your server, username, and password.
 4. Click **Sign In** and data should populate.
 
+# Cost Management
+
+If you do not want your Fivetran data pipeline to continue to burn Snowflake credits, please remember to log back into Fivetran and **Pause** your connector.
+
 # Sample Login Information
 
 The password is the same for the below example accounts. Ask a leader for it.
