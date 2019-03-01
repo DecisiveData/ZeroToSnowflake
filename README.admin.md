@@ -22,8 +22,14 @@
 
 ## Install More Sample Data 
 
-1. Install more data with this app: https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000EO5smUAD
-2. TODO: better instructions here
+1. Go to https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000EO5smUAD and click **Get It Now**.
+2. Click **Log In** and enter the credentials you used to create your new Salesforce account.
+2. Click **Install in Production**.
+3. If your profile details are missing any required blanks click **Edit** to fill them in. Then check the box to agree to the terms, and click **Confirm and Install**.
+4. Select **Install for All Users**, click the button to start. and then wait. This page may be loading for a few minutes. When it is done, the message box will say "Installation Complete!".
+5. Click **Done**.
+6. To confirm the data has loaded, navigate back to your Salesforce homepage and click the square icon (made up of 9 dots) in the upper left. In the box that pops up, under All Items, click **Accounts**.
+7. At the top, change from Recently Viewed to All Accounts to see the newly loaded accounts.
 
 # Data Pipeline Cleanup: Clearning Old salesforce_z2s Salesforce Configuration
 
