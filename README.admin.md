@@ -40,6 +40,6 @@
 
 # Data Warehouse Cleanup: Clearing Old salesforce_z2s Schema
 
-1. Log into https://ddlearn.snowflakecomputing.com.
+1. Log into https://decisivedata.snowflakecomputing.com.
 2. Switch to the role PC_FIVETRAN_ROLE (contact IT to get this role if you don't have access to it).
 3. Delete the SALESFORCE_Z2S schema and all of its contents using these two commands: `USE DATABASE PC_FIVETRAN_DB; DROP SCHEMA SALESFORCE_Z2S;`
