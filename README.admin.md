@@ -33,7 +33,10 @@
 
 # Data Pipeline Cleanup: Clearning Old salesforce_z2s Salesforce Configuration
 
-1. TODO
+1. Log in at https://fivetran.com/dashboard. This should load the Connectors page (if not, click **Connectors** on the left menu).
+2. Click **Salesforce** (it may say something like "Salesforce(5)"), then click the **salesforce_z2s** connector.
+3. Toward the top of the screen, click **Setup**.
+4. Scroll down to the bottom and click the link titled **Click to Permanently delete the Salesforce connector salesforce_z2s**.
 
 # Data Warehouse Cleanup: Clearing Old salesforce_z2s Schema
 
