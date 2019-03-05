@@ -41,6 +41,8 @@ To connect pull data from Salesforce there are two options:
 
 # Data Pipeline Setup - Fivetran
 
+## Via Partner Connect
+
 1. In Snowflake, click the user menu (top right corner) → Switch Role → Select ACCOUNTADMIN.
 2. Click the **Partner Connect** tab.
 3. Choose the Fivetran option and click **Connect**. This will initiate an automatic process to create a partner trial account in Fivetran that will connect to Snowflake.
