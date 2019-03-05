@@ -11,7 +11,7 @@ In this Zero to Snowflake event, we will build a cloud data analytics infrastruc
 The cloud analytics tools we will use for this process are:
 
 - Data Source: [**Salesforce**](https://www.salesforce.com)
-- Data Pipeline: [**Fivetran**](https://www.fivetran.com)
+- Data Pipeline: [**Fivetran**](https://fivetran.com/signup/decisive-data)
 - Data Warehouse: [**Snowflake**](https://trial.snowflake.com/?utm_source=decisive-data&utm_medium=referral&utm_campaign=self-service-partner-referral-decisive-data)
 - Data Visualization: [**Tableau**](https://www.tableau.com/partner-trial?id=19610)
 
@@ -104,6 +104,7 @@ The password is the same for the below example accounts. Ask a leader for it.
 - URL: https://login.salesforce.com
 - User: `snowflake@decisivedata.net`
 - User: `snowflake1@decisivedata.net`
+- User: `snowflake2@decisivedata.net`
 
 ## Snowflake Login
 
